@@ -1,0 +1,51 @@
+<html>
+<head>
+<script language='JavaScript'>
+var txt=" Daftar Handphone ";
+var speed=300;
+var refresh=null;
+function action() { document.title=txt;
+txt=txt.substring(1,txt.length)+txt.charAt(0);
+refresh=setTimeout("action()",speed);}action();
+</script>
+</head>
+<body>
+<h1 align="center">Daftar Handphone</h1>
+<table width="745" border="1" cellspacing="0" cellpadding="5"" align="center">
+<tr align="center" bgcolor="#66ccc33">
+<td width="174">Nama Handphone</td>
+<td width=":353">Harga Handphone</td>
+<td width="232">Spesifikasi Handphone</td>
+</tr>
+<tr>
+<td>Handphone Asus ROG</td>
+<td>Rp 10.000.000</td>
+<td> OS: Android 9.0 (Pie), ROG UI.
+Chipset: Qualcomm SDM855 Snapdragon 855 Plus.
+CPU: Octa-core (1x2.96 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.8 GHz Kryo 485)
+GPU: Adreno 640.
+RAM: 8 GB.
+Internal Memori: 128 GB / 512 GB.</td>
+</tr>
+<tr>
+<td>Handphone Xiaomi Black Shark</td>
+<td> Rp 8.000.000</td>
+<td>OS: Android 8.0 (Oreo).
+Chipset: Qualcomm SDM845 Snapdragon 845 (10 nm).
+CPU: Octa-core (4x2.8 GHz Kryo 385 Gold & 4x1.8 GHz Kryo 385 Silver)
+GPU: Adreno 630.
+RAM: 8 GB./6 GB
+Internal Memori: 128 GB / 64 GB.</td>
+</tr>
+<tr>
+<td>Handphone Iphone 11 Pro Max</td>
+<td>Rp 60.000.000</td>
+<td>OS:iOS 13, upgradable to iOS 13.2.
+Chipset: Apple A13 Bionic (7 nm+).
+CPU: Hexa-core (2x2.65 GHz Lightning + 4x1.8 GHz Thunder).
+GPU: Apple GPU (4-core graphics).
+Internal: 64GB 4GB RAM, 256GB 4GB RAM, 512GB 4GB RAM</td>
+</tr>
+</table>
+</body>
+</html>

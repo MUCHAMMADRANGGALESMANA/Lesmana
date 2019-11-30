@@ -1,0 +1,90 @@
+<html>
+<head> <title> Form Pemesanan | bayangkan.com </title>
+<style type="text/css">
+/*
+Deskripsi : Sebuah formulir untuk pemesanan suatu barang. Bila menu 'Kirim' diklik,
+maka akan mengeluarkan alert 'Terima Kasih sudah berbelanja!'
+copyright (c) 2019 oleh : Muchammad Rangga Lesmana | muchammadrangga03@gmail.com
+Terima kasih dan semoga bermanfaat.
+Kunjungi terus blog : lesmana03.blogspot.com dan Salam Developer bos ku !
+*/
+h1 { font-family: Ubuntu;
+}
+p1 {font-family: Droid Sans;
+ margin-left: 400px;
+}
+ul {font-family: droid Sans;
+ list-style: none;
+}
+p3 {margin-left: 350px;
+}
+p0 {margin-left: 400px;
+}
+li {margin-left: 350px;
+}
+label {cursor: pointer;
+display: block;
+}
+textarea {width: 250px;
+ height: 120px;
+}
+p4 {margin-left: 500px;
+ font-family: ubuntu ;
+font-size: 20px;
+}
+</style>
+</head>
+<script language='JavaScript'>
+var txt="pemesanan Handphone ";
+var speed=150;
+var refresh=null;
+function action() { document.title=txt;
+txt=txt.substring(1,txt.length)+txt.charAt(0);
+refresh=setTimeout("action()",speed);}action();
+</script>
+<body>
+<p4> <strong> FORM PEMESANAN Handphone </p4> </strong> <br>
+<p1> Silakan isi form di bawah ini untuk melakukan pemesanan barang </p1>
+<form action="" method="get">
+<ul>
+<li>
+<label for="nama"> Nama Pemesan : </label>
+<input id="nama" name="namamu" />
+</li>
+<br>
+<li>
+<label for="alamat"> Alamat Lengkap : (Tulis selengkap-lengkapnya ) </label>
+<textarea id="alamat" name="alamat"></textarea>
+</li> <br>
+<li>
+<label for="nomorhp"> Nomor Handphone : </label>
+<input id="nomorhp" name="nomorhpmu" />
+</li> <br>
+<li>
+<label for="e-mail"> Alamat E-mail : </label>
+<input id="e-mail" name="e-mail" />
+</li> <br>
+<p3> PESANAN </p3>
+<li>
+<label for="pesanan"> Pilih Salah Satu Pesanan : </label>
+<input type="checkbox" /> Handphone Asus ROG </input> <br>
+<input type="checkbox" /> Handphone Xiaomi Black Shark  </input> <br>
+<input type="checkbox" /> Handphone Iphone 11 Pro Max </input> <br>
+</li> <br>
+<li>
+<label for="Warna"> Pilih Warna : </label>
+<input type="checkbox" /> Black
+<input type="checkbox" /> Blue
+<input type="checkbox" /> Silver
+<input type="checkbox" /> Gold
+</li> <br>
+<li>
+<label for="jumlah"> Jumlah : </label>
+<input id="jumlah" name="jumlah" />
+<a> <input type="submit" value="Kirim" onclick="alert('Terima kasih bos ku. jangan Lupa Habiskan Uang Anda  !');
+" /> </a>
+</li> <br>
+</ul>
+</form>
+</body>
+</html>
